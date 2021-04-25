@@ -1,0 +1,97 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+#canvas {
+  background-color: #222;
+  cursor: crosshair;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  border-top: 1px solid grey;
+  height: 100px;
+  transform: translateY(-4px);
+  user-select: none;
+}
+
+.tools .tool-icons {
+  height: 40px;
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 30%;
+  margin: 0 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 200ms;
+}
+
+.tools .tool-icons:hover {
+  border: 3px solid lightblue;
+  transform: scale(1.5);
+}
+
+#clear #clear-text {
+  text-align: center;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(-20%);
+}
+
+#eraser #eraser-text {
+  text-align: center;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(-20%);
+}
+
+#clear:hover #clear-text {
+  transform: translateY(-40%);
+}
+
+#eraser:hover #eraser-text {
+  transform: translateY(-40%);
+}
+
+#undo {
+  background-color: white;
+  border-radius: 50%;
+}
+
+#undo #undo-pic {
+  width: 80%;
+  height: 80%;
+  transform: translate(3px, 5px);
+}
+
+#clear {
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+#eraser {
+  background-color: pink;
+  border-radius: 50%;
+}
+
+#white {
+  background-color: white;
+}
+
+#red {
+  background-color: darkred;
+}
+#green {
+  background-color: darkgreen;
+}
+#blue {
+  background-color: darkblue;
+}
+#yellow {
+  background-color: gold;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="tools">
+    <div onClick="undoOnClick()" class="tool-icons" id="undo">
+      <img src="undo_pic.jpg" alt="undo picture" id="undo-pic">
+    </div>
+    <div onClick="clearScreen()" class="tool-icons" id="clear">
+      <p id="clear-text">CLR</p>
+    </div>
+    <div onClick="setColorToBackgroundCanvasColor(this.id)" class="tool-icons" id="eraser">
+      <p id="eraser-text">ER</p>
+    </div>
+    <div onClick="changeColor(this.id)" class="tool-icons" id="white"></div>
+    <div onClick="changeColor(this.id)" class="tool-icons" id="red"></div>
+    <div onClick="changeColor(this.id)" class="tool-icons" id="green"></div>
+    <div onClick="changeColor(this.id)" class="tool-icons" id="blue"></div>
+    <div onClick="changeColor(this.id)" class="tool-icons" id="yellow"></div>
+  </div>
+</body>
+<script src="canvas.js"></script>
+</html>
